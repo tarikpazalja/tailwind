@@ -3,6 +3,8 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import StranicaForma from "./pages/StranicaForma";
+import StranicaFormaDruga from "./pages/StranicaFormaDruga";
+import EmployeeCard from "./pages/EmployeeCard";
 function App() {
   return (
     <Router>
@@ -13,6 +15,12 @@ function App() {
           </li>
           <li>
             <Link to="/forma">Forma</Link>
+          </li>
+          <li>
+            <Link to="/formadruga">FormaDruga</Link>
+          </li>
+          <li>
+            <Link to="/cardemployee">CardEmployee</Link>
           </li>
         </ul>
 
@@ -31,6 +39,12 @@ function App() {
           </Route>
           <Route path="/forma">
             <StranicaForma />
+          </Route>
+          <Route path="/formadruga">
+            <StranicaFormaDruga />
+          </Route>
+          <Route path="/cardemployee">
+            <EmployeeCard />
           </Route>
         </Switch>
       </div>
