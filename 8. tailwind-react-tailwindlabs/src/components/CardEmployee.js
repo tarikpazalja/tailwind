@@ -14,8 +14,8 @@ function CardEmployee() {
         <div className="bg-gray-200 text-lg text-gray-700 px-6 py-4">
           The title of the Card
         </div>
-        <div>
-          <div>Under Review</div>
+        <div className="flex justify-between px-6 py-4">
+          <div className="uppercase bg-yellow-700 font-xs px-2 py-1 text-gray-300 border border-gray-200 font-bold rounded-full">Under Review</div>
           <div>23,05/1983</div>
         </div>
         <div>
