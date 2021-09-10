@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import StranicaForma from "./pages/StranicaForma";
 import StranicaFormaDruga from "./pages/StranicaFormaDruga";
 import EmployeeCard from "./pages/EmployeeCard";
+import Webforms from "./pages/Webforms";
 function App() {
   return (
     <Router>
@@ -21,6 +22,9 @@ function App() {
           </li>
           <li>
             <Link to="/cardemployee">CardEmployee</Link>
+          </li>
+          <li>
+            <Link to="/webforms">Webforms</Link>
           </li>
         </ul>
 
@@ -45,6 +49,9 @@ function App() {
           </Route>
           <Route path="/cardemployee">
             <EmployeeCard />
+          </Route>
+          <Route path="/webforms">
+            <Webforms />
           </Route>
         </Switch>
       </div>
